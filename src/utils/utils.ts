@@ -10,5 +10,6 @@ export const checkResponse = <T>(res: Response) => {
 };
 
 export const checkSuccess = <T>(response: TResponse<T>) => {
+  console.log(response.success);
   return response.success ? response : Promise.reject('Error data');
 };

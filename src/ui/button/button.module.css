@@ -1,0 +1,39 @@
+.button {
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  font-family: 'Lato';
+  
+}
+
+.primary {
+  color: #ffffff;
+  background-color: #4154a4;
+}
+
+.primary:hover {
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), #4154A4;
+}
+
+.primary:active {
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), #4154A4;
+}
+
+.secondary {
+  color: #4154a4;
+  background: rgba(65, 84, 164, 0.1);
+}
+
+.small {
+  font-size: 16px;
+  line-height: 19px;
+  padding: 10px 15px;
+}
+
+.large {
+  font-size: 18px;
+  line-height: 22px;
+  padding: 18px 56px;
+}
