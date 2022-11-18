@@ -51,6 +51,7 @@ export type TShiftActions =
 // при получении списка всех смен
 type TShiftsData = {
   data: Array<TShift>;
+  body: any;
 };
 
 // Получить список смен с фильтрацией по статусу.
@@ -59,7 +60,7 @@ export const getShiftsThunk: AppThunk = () => (dispatch: AppDispatch) => {
     type: GET_SHIFTS_REQUEST,
   });
 
-  // return 
+  // return
   //   fetch(`${baseUrl}/shifts/`, {
   //     method: 'GET',
   //     mode: 'cors',
@@ -71,14 +72,19 @@ export const getShiftsThunk: AppThunk = () => (dispatch: AppDispatch) => {
   //     redirect: 'follow',
   //     referrerPolicy: 'no-referrer',
   //   })
-      return fetch(`${baseUrl}/shifts`)
-      // return fetch(`${baseUrl}/ingredients/`)
-      .then((result) => checkResponse<TShiftsData>(result))
+  return (
+    // fetch(`${baseUrl}/uset_tasks/`)
+    fetch(`${baseUrl}/healthcheck/`)
+    // fetch(`${baseUrl}/ingredients/`)
+      .then((result) => {
+        // console.log(result);
+        return checkResponse<TShiftsData>(result);
+      })
       .then(checkSuccess)
       .then((responseBody) => {
-        if (responseBody) {
+        // if (responseBody) {
           console.log(responseBody);
-        }
+        // }
       })
       .catch((err) => {
         dispatch({
@@ -86,5 +92,6 @@ export const getShiftsThunk: AppThunk = () => (dispatch: AppDispatch) => {
           payload: err,
         });
       })
+  );
   // );
 };

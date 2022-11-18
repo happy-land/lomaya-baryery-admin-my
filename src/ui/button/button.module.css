@@ -26,6 +26,30 @@
   background: rgba(65, 84, 164, 0.1);
 }
 
+.secondary:hover {
+  background: rgba(65, 84, 164, 0.2);
+}
+
+.secondary:active {
+  color: #ffffff;
+  background: #4154A4;
+}
+
+.negative {
+  background: rgba(65, 84, 164, 0.1);
+  color: #4154a4;
+}
+
+.negative:hover {
+  color: #c53637;
+  background: rgba(197, 54, 55, 0.1);
+}
+
+.negative:active {
+  color: #ffffff;
+  background: #C53637;
+}
+
 .small {
   font-size: 16px;
   line-height: 19px;

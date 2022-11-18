@@ -1,0 +1,10 @@
+.navbar {
+  border: 1px solid red;
+  display: flex;
+  width: 264px;
+}
+
+.navbar__container {
+  display: flex;
+  flex-direction: column;
+}
