@@ -1,8 +1,10 @@
 .dropdown {
   /* border: 1px solid green; */
+  
 }
 
 .button {
+  cursor: pointer;
   border: none;
   border-radius: 10px;
   background-color: #F7F6F9;
@@ -20,6 +22,7 @@
 }
 
 .button__text {
+  color: var(--colors-interface-gray-dark);
   margin: 0 17px 0 8px;
   padding: 0;
   width: 166px;
@@ -32,4 +35,8 @@
   font-weight: 700;
   font-size: 18px;
   line-height: 22px;
+}
+
+.button__text_active {
+  color: var(--colors-interface-blue);
 }
