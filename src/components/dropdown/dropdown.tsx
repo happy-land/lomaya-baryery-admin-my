@@ -1,4 +1,5 @@
 import { FC, useState } from 'react';
+import { CalendarIcon, ChevronDownIcon } from '../../ui/icons';
 import styles from './dropdown.module.css';
 
 interface IDropdownProps {
@@ -13,7 +14,9 @@ export const Dropdown: FC<IDropdownProps> = ({ text, children }) => {
     <div>
       <button type='button' className={styles.button} onClick={() => setIsActive((active) => !active)}>
         <div className={styles.button__container}>
-          <p>{text}</p>
+          <CalendarIcon type='link' />
+          <p className={styles.button__text}>{text}</p>
+          <ChevronDownIcon type='link' />
         </div>
       </button>
       {isActive ? children : null}

@@ -1,12 +1,35 @@
 .dropdown {
-  border: 1px solid green;
+  /* border: 1px solid green; */
 }
 
 .button {
-  border: 1px solid red;
+  border: none;
+  border-radius: 10px;
+  background-color: #F7F6F9;
   width: 264px;
+  height: 58px;
+  padding: 17px 9px 17px 15px;
+}
+
+.primary {
 }
 
 .button__container {
-  
+  display: flex;
+  background-color: #f7f6f9;
+}
+
+.button__text {
+  margin: 0 17px 0 8px;
+  padding: 0;
+  width: 166px;
+  text-align: left;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
 }

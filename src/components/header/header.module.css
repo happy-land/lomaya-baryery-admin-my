@@ -2,7 +2,7 @@
   border: 1px solid red;
   display: flex;
   padding: 20px;
-  width: 100%;
+  /* width: 100%; */
   max-width: 1440px;
   justify-content: space-between;
   align-items: center;
@@ -10,6 +10,7 @@
 }
 
 .links {
+  border: 1px solid green;
   display: flex;
   gap: 30px;
 }
