@@ -15,7 +15,7 @@ export const Navbar: FC = () => {
           icon={<CalendarIcon type='link' />}
           activeIcon={<CalendarIcon type='link-active' />}
         >
-          <ul>
+          <ul className={styles.navbar__menu}>
             {shifts.map((shift, index) => {
               return <NavbarElement key={index} title={shift.title} />;
             })}
@@ -26,7 +26,7 @@ export const Navbar: FC = () => {
           activeIcon={<NoteEditIcon type='link-active' />}
           text='Заявки на участие'
         >
-          <ul>
+          <ul className={styles.navbar__menu}>
             {requests.map((request, index) => {
               return <NavbarElement key={index} title={request.title} />;
             })}
@@ -42,7 +42,7 @@ export const Navbar: FC = () => {
           activeIcon={<FileCheckIcon type='link-active' />}
           text='Отчеты участников'
         >
-          <ul>
+          <ul className={styles.navbar__menu}>
             {userTasks.map((task, index) => {
               return <NavbarElement key={index} title={task.title} />;
             })}

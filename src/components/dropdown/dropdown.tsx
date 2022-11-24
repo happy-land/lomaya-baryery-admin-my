@@ -13,7 +13,7 @@ export const Dropdown: FC<IDropdownProps> = ({ text, icon, activeIcon, children 
   const [isActive, setIsActive] = useState(false);
 
   return (
-    <div>
+    <div className={styles.dropdown}>
       <button type='button' className={styles.button} onClick={() => setIsActive((active) => !active)}>
         <div className={styles.button__container}>
           {isActive ? activeIcon : icon}
