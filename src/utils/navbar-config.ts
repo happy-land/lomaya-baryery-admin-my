@@ -1,16 +1,16 @@
 export const shifts = [
-  { link: '/shifts/all', title: 'Все' },
-  { link: '/shifts/current', title: 'Текущая' },
-  { link: '/shifts/new', title: 'Новая' },
+  { link: '/shift/all', title: 'Все', section: 'shift' },
+  { link: '/shift/current', title: 'Текущая', section: 'shift' },
+  { link: '/shift/new', title: 'Новая', section: 'shift' },
 ];
 
 export const requests = [
-  { link: '', title: 'Активные' },
-  { link: '', title: 'Рассмотренные' }
+  { link: '', title: 'Активные', section: 'requests' },
+  { link: '', title: 'Рассмотренные', section: 'requests' }
 ];
 
 export const userTasks = [
-  { link: '', title: 'Ждут проверки' },
-  { link: '', title: 'Проверенные' },
-  { link: '', title: 'Отклонённые' },
+  { link: '', title: 'Ждут проверки', section: 'tasks' },
+  { link: '', title: 'Проверенные', section: 'tasks' },
+  { link: '', title: 'Отклонённые', section: 'tasks' },
 ];

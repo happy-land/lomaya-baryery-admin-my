@@ -7,6 +7,7 @@ export const AppRoutes = () => (
       <Route path='/' element={<Layout />}>
         <Route path='/shift/all' element={<div>1</div>} />
         <Route path='/shift/current' element={<div>244</div>} />
+        <Route path='/shift/new' element={<div>244</div>} />
       </Route>
     </Routes>
   </div>

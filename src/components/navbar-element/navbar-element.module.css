@@ -10,9 +10,15 @@
 
 .item__box {
   /* border: 1px solid blue; */
+  text-decoration: none;
   width: 100%;
   max-height: 100%;
   padding: 17px 0 19px 30px;
+}
+
+.item__box_active {
+  background: #ffffff;
+  border-radius: 10px;
 }
 
 .item__title {
