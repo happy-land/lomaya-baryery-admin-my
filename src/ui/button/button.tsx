@@ -2,14 +2,16 @@ import { FC } from 'react';
 import styles from './button.module.css';
 
 interface IButtonProps {
-  onClick: () => void;
+  // onClick: () => void;
+  handleClick: () => void;
   variant: string;
   size?: string;
   type: string;
 }
 
 export const Button: FC<IButtonProps> = ({
-  onClick,
+  // onClick,
+  handleClick,
   variant = '',
   size = 'large',
   type = 'primary',
@@ -18,7 +20,7 @@ export const Button: FC<IButtonProps> = ({
   return (
     <button
       className={`${styles.button} ${styles[size]} ${styles[type]}`}
-      onClick={onClick}
+      onClick={handleClick}
     >
       {children}
     </button>

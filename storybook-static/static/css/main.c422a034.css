@@ -1,0 +1,65 @@
+.button_button__gnezq {
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  font-family: 'Lato';
+  
+}
+
+.button_primary__E\+o9p {
+  color: #ffffff;
+  background-color: #4154a4;
+}
+
+.button_primary__E\+o9p:hover {
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), #4154A4;
+}
+
+.button_primary__E\+o9p:active {
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), #4154A4;
+}
+
+.button_secondary__SDMw8 {
+  color: #4154a4;
+  background: rgba(65, 84, 164, 0.1);
+}
+
+.button_secondary__SDMw8:hover {
+  background: rgba(65, 84, 164, 0.2);
+}
+
+.button_secondary__SDMw8:active {
+  color: #ffffff;
+  background: #4154A4;
+}
+
+.button_negative__kwF0A {
+  background: rgba(65, 84, 164, 0.1);
+  color: #4154a4;
+}
+
+.button_negative__kwF0A:hover {
+  color: #c53637;
+  background: rgba(197, 54, 55, 0.1);
+}
+
+.button_negative__kwF0A:active {
+  color: #ffffff;
+  background: #C53637;
+}
+
+.button_small__CBwtp {
+  font-size: 16px;
+  line-height: 19px;
+  padding: 10px 15px;
+}
+
+.button_large__eYBNn {
+  font-size: 18px;
+  line-height: 22px;
+  padding: 18px 56px;
+}
+
+/*# sourceMappingURL=main.c422a034.css.map*/

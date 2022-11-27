@@ -4,9 +4,12 @@ import { ComponentStory, ComponentMeta } from '@storybook/react';
 import styles from './button.module.css';
 
 export default {
-  title: 'Button',
+  title: 'Components/Button',
   component: Button,
   argTypes: {
+    handleClick: {
+      action: 'handleClick'
+    },
     type: {
       type: 'string',
       description: 'Тип кнопки',
